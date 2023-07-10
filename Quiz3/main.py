@@ -239,10 +239,10 @@ class Ui_MainWindow(object):
     def write(self):
         dict = {
             'id': self.lineEdit.text(),
-            'LastName': self.lineEdit_2.text(),
-            'FirstName': self.lineEdit_3.text(),
-            'Subject': self.lineEdit_4.text(),
-            'Point': self.lineEdit_5.text()
+            'lastname': self.lineEdit_2.text(),
+            'firstname': self.lineEdit_3.text(),
+            'subject': self.lineEdit_4.text(),
+            'point': self.lineEdit_5.text()
         }
         self.collection.insert_one(dict)
         print('Record is inserted')
